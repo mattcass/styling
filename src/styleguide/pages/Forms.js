@@ -12,7 +12,7 @@ export default () => (
       <ContentContainer
         title="Base Input"
         meta="Examples of standard text inputs. Labels typically surround inputs and any associated label text or error text to ensure that all information associated with an input is announced by a screen reader.">
-        <label for="unique_id_here1">
+        <label htmlFor="unique_id_here1">
           <span className="block">Text Input:</span>
           <input type="text" id="unique_id_here1" />
         </label>

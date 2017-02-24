@@ -1,5 +1,3 @@
-require('./styles/index.css')
-
 import React from 'react'
 import { render } from 'react-snapshot'
 import App from './App'
