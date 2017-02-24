@@ -1,62 +1,22 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+require('./styles/global.css')
+
+import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Helmet from 'react-helmet'
-import Home from './pages/Home'
-import Typography from './pages/Typography'
-import Modules from './pages/Modules'
-import Forms from './pages/Forms'
-import NoMatch from './pages/NoMatch'
-import NavLink from './components/NavLink'
+import Styleguide from './styleguide/Styleguide'
+import Application from './application/Application'
 
-const routes = [
-  {
-    title: 'Index',
-    path: '/',
-    component: Home,
-    exact: true
-  },
-  {
-    title: 'Typography',
-    path: '/typography',
-    component: Typography
-  },
-  {
-    title: 'Forms',
-    path: '/forms',
-    component: Forms
-  },
-  {
-    title: 'Modules',
-    path: '/modules',
-    component: Modules
-  },
-]
-
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="page">
-          <Helmet title="styling FTS" />
-          <nav className="nav">
-            <div className="container">
-              <ul>
-                {routes.map((route, i ) => (
-                  <NavLink key={i} {...route} />
-                ))}
-              </ul>
-            </div>
-          </nav>
-          <Switch>
-            {routes.map((route, i ) => (
-              <Route key={i} {...route} />
-            ))}
-            <Route component={NoMatch} />
-          </Switch>
-        </div>
-      </Router>
-    );
-  }
-}
-
-export default App;
+export default () => (
+  <Router>
+    <div>
+      <Helmet title="Hello."/>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/styleguide">Styleguide</Link></li>
+        <li><Link to="/application">Application</Link></li>
+      </ul>
+      <Route path="/styleguide" component={Styleguide} />
+      <Route path="/application" component={Application} />
+    </div>
+  </Router>
+)
