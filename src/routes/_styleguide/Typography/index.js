@@ -1,5 +1,5 @@
 import React from 'react'
-import ContentContainer from '../components/contentContainer'
+import ContentContainer from '../../components/_styleguide/contentContainer';
 
 export default () => (
   <main id="main">

@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import Home from './pages/Home';
-import Typography from './pages/Typography';
-import Modules from './pages/Modules';
-import Forms from './pages/Forms';
-import NoMatch from './pages/NoMatch';
+import Typography from './pages/rountes/_styleguide/Typography';
+import Modules from './pages/rountes/_styleguide/Modules';
+import Forms from './pages/rountes/_styleguide/Forms';
+import NoMatch from './pages/rountes/_styleguide/NoMatch';
 import NavLink from './components/NavLink';
 
 const routes = [
