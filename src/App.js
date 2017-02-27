@@ -6,7 +6,7 @@ import Helmet from 'react-helmet';
 import Styleguide from './styleguide/Styleguide';
 import Application from './application/Application';
 
-import AppNav from './components/Nav/AppNav';
+import AppNav from './components/Navs/AppNav';
 
 export default () => (
   <Router>

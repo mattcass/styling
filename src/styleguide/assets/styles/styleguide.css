@@ -5,7 +5,7 @@
   within the style guide.
  */
 .sg__section {
-
+  overflow: hidden;
 }
 
 /*
@@ -68,6 +68,7 @@
   background: #fff;
   border: 1px solid #ccc;
   padding: 16px;
+  position: relative;
 }
 
 .sg__section__primary-content__view {
@@ -75,7 +76,8 @@
 }
 
 .sg__section__primary-content__view__subtitle {
-
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .sg__section__primary-content__view__actions {
@@ -97,4 +99,5 @@
 .sg__section__primary-content__view__instance {
   min-height: 200px;
   overflow: hidden;
+  position: relative;
 }

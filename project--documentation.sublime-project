@@ -15,6 +15,7 @@
       "file_exclude_patterns": [
         "*.ico",
         "*.map",
+        "*.log",
         "*.css",
         "*.scss",
         "*.js",
