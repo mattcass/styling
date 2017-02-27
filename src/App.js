@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import Styleguide from './styleguide/Styleguide';
-import Application from './application/Application';
+import Application from './routes/appIndex';
 
 import AppNav from './components/Navs/AppNav';
 
