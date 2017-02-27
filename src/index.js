@@ -1,14 +1,15 @@
-import React from 'react'
-import { render } from 'react-snapshot'
-import App from './App'
+import React from 'react';
+import { render } from 'react-snapshot';
+import App from './App';
 
-const rootEl = document.getElementById('root')
+const doc = document;
+const rootEl = doc.getElementById('root');
 
-render(<App />, rootEl)
+render(<App />, rootEl);
 
-if (module.hot) {
+if ( module.hot ) {
   module.hot.accept('./App', () => {
-    const NextApp = require ('./App').default
-    render(<NextApp />, rootEl)
-  })
+    const NextApp = require ('./App').default;
+    render(<NextApp />, rootEl);
+  });
 }

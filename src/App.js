@@ -1,10 +1,10 @@
-require('./styles/global.css')
+require('./assets/styles/global.css');
 
-import React from 'react'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import Helmet from 'react-helmet'
-import Styleguide from './styleguide/Styleguide'
-import Application from './application/Application'
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Helmet from 'react-helmet';
+import Styleguide from './styleguide/Styleguide';
+import Application from './application/Application';
 
 export default () => (
   <Router>
@@ -19,4 +19,4 @@ export default () => (
       <Route path="/application" component={Application} />
     </div>
   </Router>
-)
+);
