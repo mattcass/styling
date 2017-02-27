@@ -1,12 +1,14 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Helmet from 'react-helmet'
-import Home from './pages/Home'
-import Typography from './pages/Typography'
-import Modules from './pages/Modules'
-import Forms from './pages/Forms'
-import NoMatch from './pages/NoMatch'
-import NavLink from './components/NavLink'
+require('./assets/styles/styleguide.css');
+
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Helmet from 'react-helmet';
+import Home from './pages/Home';
+import Typography from './pages/Typography';
+import Modules from './pages/Modules';
+import Forms from './pages/Forms';
+import NoMatch from './pages/NoMatch';
+import NavLink from './components/NavLink';
 
 const routes = [
   {
@@ -30,7 +32,7 @@ const routes = [
     path: '/modules',
     component: Modules
   },
-]
+];
 
 class Styleguide extends Component {
   render() {
@@ -57,6 +59,6 @@ class Styleguide extends Component {
       </Router>
     );
   }
-}
+};
 
 export default Styleguide;
