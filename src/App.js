@@ -3,9 +3,9 @@ require('./assets/styles/global.css');
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
+
 import Styleguide from './styleguide/Styleguide';
 import Application from './application/Application';
-
 import AppNav from './components/Navs/AppNav';
 
 export default () => (
@@ -21,6 +21,7 @@ export default () => (
         <li><Link to="/">Home</Link></li>
         <li><Link to="/styleguide">Styleguide</Link></li>
         <li><Link to="/application">Application</Link></li>
+        <li><a href="./app.html">Link to app here</a></li>
       </AppNav>
 
 
