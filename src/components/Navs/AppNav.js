@@ -5,7 +5,7 @@ import './AppNav.css';
 
 class AppNav extends Component {
 
-  // Declare propTypes as static properties as early as possible
+  // Static properties used in this component
   static propTypes = {
     ariaLabel: React.PropTypes.string,
     class: React.PropTypes.string,
