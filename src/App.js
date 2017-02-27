@@ -5,15 +5,14 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 
 import Styleguide from './styleguide/Styleguide';
-import Application from './application/Application';
+import Application from './routes/appIndex';
+
 import AppNav from './components/Navs/AppNav';
 
-export default () => (
-  <Router>
-    <div>
-      <Helmet title="Hello."/>
+const Dashboard = React.createClass({
 
-
+  render () {
+    return (
       <AppNav id="app_nav"
         ariaLabel="Primary"
         class="app-nav"
@@ -23,8 +22,16 @@ export default () => (
         <li><Link to="/application">Application</Link></li>
         <li><a href="./app.html">Link to app here</a></li>
       </AppNav>
+    )
+  }
+});
 
+export default () => (
+  <Router>
+    <div>
+      <Helmet title="Title goes here"/>
 
+      <Route path="/" component={Dashboard} />
       <Route path="/styleguide" component={Styleguide} />
       <Route path="/application" component={Application} />
     </div>

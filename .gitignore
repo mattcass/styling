@@ -20,7 +20,7 @@
 # all CSS files are compiled via start/build tasks.
 # need only to keep track of the source files.
 #---------------------------------------------------------
-## *.css
+*.css
 *.map
 .sass-cache/
 .sass-cache/*
