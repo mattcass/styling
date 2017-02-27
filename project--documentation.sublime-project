@@ -1,0 +1,37 @@
+{
+  "folders":
+  [
+    {
+      "folder_exclude_patterns": [
+        "node_modules",
+        "build",
+        "public",
+        "assets",
+        "_globalStyles"
+      ],
+
+      "path": ".",
+
+      "file_exclude_patterns": [
+        "*.ico",
+        "*.map",
+        "*.css",
+        "*.scss",
+        "*.js",
+        "*.sublime-project",
+        ".editorconfig",
+        ".gitignore",
+        ".gitkeep",
+        ".htaccess",
+        ".htpasswd",
+        ".stylelintrc",
+        ".stylelintignore",
+        ".jsbeautifyrc",
+        ".eslintrc",
+        ".eslintignore",
+        "package.json",
+
+      ]
+    }
+  ]
+}

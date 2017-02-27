@@ -1,17 +1,65 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+#---------------------------------------------------------
+#
+# GitIgnore
+#
+#---------------------------------------------------------
 
-# dependencies
+#---------------------------------------------------------
+# Generated Folders:
+# ignore folders generated through install, test,
+# or build scripts.
+#---------------------------------------------------------
 /node_modules
-
-# testing
+/build
+/dist
 /coverage
 
-# production
-/build
 
-# misc
+#---------------------------------------------------------
+# CSS & Sass:
+# all CSS files are compiled via start/build tasks.
+# need only to keep track of the source files.
+#---------------------------------------------------------
+*.css
+*.map
+.sass-cache/
+.sass-cache/*
+
+
+#---------------------------------------------------------
+# Editors:
+#---------------------------------------------------------
+*.esproj
+*.sublime-workspace
+*.swp
+*.tmproj
+*.tmproject
+*.un~
+.*.sw[a-z]
+Session.vim
+tmtags
+
+
+#---------------------------------------------------------
+# OS: Mac (mostly) & Windows
+#---------------------------------------------------------
+._*
 .DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+
+
+#---------------------------------------------------------
+# Misc.
+#---------------------------------------------------------
 .env
+.htaccess
+.htpasswd
+.svn/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

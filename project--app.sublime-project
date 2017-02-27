@@ -1,0 +1,34 @@
+{
+  "folders":
+  [
+    {
+      "folder_exclude_patterns": [
+        "node_modules",
+        "build",
+        "documentation"
+      ],
+
+      "path": ".",
+
+      "file_exclude_patterns": [
+        "*.ico",
+        "*.map",
+        "*.css",
+        "*.sublime-project",
+        ".editorconfig",
+        ".gitignore",
+        ".gitkeep",
+        ".htaccess",
+        ".htpasswd",
+        ".stylelintrc",
+        ".stylelintignore",
+        ".jsbeautifyrc",
+        ".eslintrc",
+        ".eslintignore",
+        "package.json",
+        "*.md"
+
+      ]
+    }
+  ]
+}
