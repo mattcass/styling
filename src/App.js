@@ -6,15 +6,24 @@ import Helmet from 'react-helmet';
 import Styleguide from './styleguide/Styleguide';
 import Application from './application/Application';
 
+import AppNav from './components/Nav/AppNav';
+
 export default () => (
   <Router>
     <div>
       <Helmet title="Hello."/>
-      <ul>
+
+
+      <AppNav id="app_nav"
+        ariaLabel="Primary"
+        class="app-nav"
+        hasBtn="false">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/styleguide">Styleguide</Link></li>
         <li><Link to="/application">Application</Link></li>
-      </ul>
+      </AppNav>
+
+
       <Route path="/styleguide" component={Styleguide} />
       <Route path="/application" component={Application} />
     </div>
