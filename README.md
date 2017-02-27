@@ -1,47 +1,82 @@
-# Styling
-## Build based on [An Almost Static Stack](https://medium.com/superhighfives/an-almost-static-stack-6df0a2791319#.jvvvdhcju).
+React Example Project
+=========
+
+Build based on [An Almost Static Stack](https://medium.com/superhighfives/an-almost-static-stack-6df0a2791319#.jvvvdhcju).
+
+
+
+## Project Dependencies
 
 This project utilizes the following tooling:
-- [Create React App](https://github.com/facebookincubator/create-react-app).
-- [React Router](https://github.com/ReactTraining/react-router).
-- [React Snapshot](https://github.com/geelen/react-snapshot).
-- [React Helmet](https://github.com/nfl/react-helmet).
+- [Create React App](https://github.com/facebookincubator/create-react-app)  
+- [React Router](https://github.com/ReactTraining/react-router)  
+- [React Snapshot](https://github.com/geelen/react-snapshot)  
+- [React Helmet](https://github.com/nfl/react-helmet)  
+- [Node Sass](https://github.com/sass/node-sass)  
 
-For the project to build, **these files must exist with exact filenames**:
+__Please Note:__  
+* `public/index.html` is the page template **(do not delete/rename)**.  
+* `src/index.js` is the JavaScript entry point **(do not delete/rename)**.  
+* WebPack only processes files within ```/src```. Add files & subdirectories here.  
+* Only files within ```/public``` can be used from ```public/index.html```  
+* Additional top-level directories may be created, but will not be included in the build process.  
 
-* `public/index.html` is the page template;
-* `src/index.js` is the JavaScript entry point.
 
-You can delete or rename the other files.
+### Initial Setup
+```
+// clone the repo
+$ git clone https://github.com/mattcass/styling
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>
-You need to **put any JS and CSS files inside `src`**, or Webpack won’t see them.
 
-Only files inside `public` can be used from `public/index.html`.<br>
-Read instructions below for using assets from JavaScript and HTML.
+// open the project directory
+$ cd styling
 
-You can, however, create more top-level directories.<br>
-They will not be included in the production build so you can use them for things like documentation.
 
-## Available Scripts
+// install dependencies
+$ npm install
+```
 
-In the project directory, you can run:
+### Development
 
-### `npm start`
+```
+// Start Local Environment
+$ npm start
+```
+The above will open [http://localhost:3000](http://localhost:3000) in the 
+browser, report linting errors in the console, and live-reload as files are edited.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```
+// Run Tests
+$ npm test
+```
+Tests info here
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```
+// Build for distribution
+$ npm run build
+```
+Generates the build folder for distribution, minifying assets and the filenames include the hashes.  
 
 The build step also makes use of [React Snapshot](https://github.com/geelen/react-snapshot) to take snapshots
 of all publically-accessible pages which allows you to serve static HTML/CSS and the bundled JS without any additional steps.
+
+
+## Contributing
+
+see contributing.md
+
+
+## Design & Development Documentation and Assets
+
+* [Development Deliverables Document](#!)  
+* [InVision Prototype](#!)  
+* [Coded Style Guide](#!)  
+* [Coded Prototype](#!)  
+
+
+### Project Team / Contributors
+
+* [Matt Casserly](https://github.com/mattcass)  
+* [Scott O'Hara](https://github.com/scottaohara)
