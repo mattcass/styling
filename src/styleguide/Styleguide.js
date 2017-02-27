@@ -38,7 +38,7 @@ class Styleguide extends Component {
   render() {
     return (
       <Router>
-        <div className="page">
+        <div className="app">
           <Helmet title="styling FTS" />
           <nav className="nav">
             <div className="container">

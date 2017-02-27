@@ -8,12 +8,10 @@ import Application from './application/Application';
 
 import AppNav from './components/Navs/AppNav';
 
-export default () => (
-  <Router>
-    <div>
-      <Helmet title="Hello."/>
+const Dashboard = React.createClass({
 
-
+  render () {
+    return (
       <AppNav id="app_nav"
         ariaLabel="Primary"
         class="app-nav"
@@ -22,8 +20,16 @@ export default () => (
         <li><Link to="/styleguide">Styleguide</Link></li>
         <li><Link to="/application">Application</Link></li>
       </AppNav>
+    )
+  }
+});
 
+export default () => (
+  <Router>
+    <div>
+      <Helmet title="Title goes here"/>
 
+      <Route path="/" component={Dashboard} />
       <Route path="/styleguide" component={Styleguide} />
       <Route path="/application" component={Application} />
     </div>
